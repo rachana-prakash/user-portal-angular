@@ -1,0 +1,16 @@
+.main-page{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+    .content {
+        display: flex;
+        min-height: 0;
+        flex: 1 1 auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+    }
+}
+

@@ -1,7 +1,13 @@
-<nav mat-tab-nav-bar [tabPanel]="tabPanel">
-    <a mat-tab-link [routerLink]="link.path" *ngFor="let link of links"> {{link.name}} </a>
-</nav>
-
-<mat-tab-nav-panel #tabPanel>
-    <router-outlet></router-outlet>
-</mat-tab-nav-panel>
+<div class="main-page">
+    <nav mat-tab-nav-bar [tabPanel]="tabPanel">
+        <a mat-tab-link [routerLink]="link.path" *ngFor="let link of links"> {{link.name}} </a>
+    </nav>
+    <section class="content">
+        <mat-tab-nav-panel #tabPanel>
+            <router-outlet></router-outlet>
+        </mat-tab-nav-panel>
+    </section>
+    <mat-toolbar>
+        <span>My Application</span>
+    </mat-toolbar>
+</div>
