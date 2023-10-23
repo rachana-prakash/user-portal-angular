@@ -1,13 +1,13 @@
 <div class="main-page">
-    <nav mat-tab-nav-bar [tabPanel]="tabPanel">
-        <a mat-tab-link [routerLink]="link.path" *ngFor="let link of links"> {{link.name}} </a>
+    <nav mat-tab-nav-bar backgroundColor="primary"  [tabPanel]="tabPanel">
+        <a class="bm"  mat-tab-link [routerLink]="link.path" *ngFor="let link of links"> {{link.name}} </a>
     </nav>
     <section class="content">
         <mat-tab-nav-panel #tabPanel>
             <router-outlet></router-outlet>
         </mat-tab-nav-panel>
     </section>
-    <mat-toolbar>
-        <div class="footer-text">Thank you for visiting</div>
+    <mat-toolbar color="primary">
+        <div >Thank you for visiting</div>
     </mat-toolbar>
 </div>

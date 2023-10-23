@@ -3,6 +3,16 @@
     flex-direction: column;
     height: 100%;
 
+    .bm{
+        border-right: 2px solid white;
+        margin: 4px 0px;
+        &:last-child{
+            border-right: none;
+        }
+    }
+
+
+
     .content {
         display: flex;
         min-height: 0;
@@ -17,6 +27,7 @@
         display: flex;
         justify-content: center;
         width: 100%;
+     
     }
 }
 
