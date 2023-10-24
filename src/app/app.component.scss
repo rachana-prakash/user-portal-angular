@@ -1,0 +1,36 @@
+.main-page{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .bm{
+        border-right: 2px solid white;
+        margin: 4px 0px;
+        &:last-child{
+            border-right: none;
+        }
+    }
+
+
+
+    .content {
+        display: flex;
+        min-height: 0;
+        flex: 1 1 auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+        mat-tab-nav-panel{
+            width: 100%;
+        }
+    }
+
+    .footer-text{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+     
+    }
+}
+
